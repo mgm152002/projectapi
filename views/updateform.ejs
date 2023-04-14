@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Update</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+</head>
+
+<body>
+    <section class="py-4 py-xl-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                    <div class="card mb-5">
+                        <div class="card-body p-sm-5">
+                            <h2 class="text-center mb-4">Update</h2>
+                            <form  id="updateform" method="post" action="/biobank/<%= bio._id %>">
+                                <label>Name</label>
+                                <input class="form-control" type="text" id="name-2" name="name" value=<%= bio.name %>></input>
+                                <label>Symptoms</label>
+                                <input class="form-control mb-3" style="margin-top: 22px;width: 361.987px;height: 164.4px;" name="symptoms" value=<%= bio.symptoms %>></input>
+                                <label>medicine</label>
+                                <input class="form-control mb-3" id="message-2" rows="6" name="medicine" value=<%= bio.medicine %>></input>
+                                <button class="btn btn-primary d-block w-100 mx-auto" type="submit">Update</button>
+                               
+
+
+
+                            
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bold-and-dark.js"></script>
+</body>
+
+</html>
