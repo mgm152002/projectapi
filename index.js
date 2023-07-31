@@ -162,7 +162,7 @@ app.post("/login",async function(req,res){
         const pass=found.password;
         bcrypt.compare(req.body.password, pass, function(err, result) {
             if(result==true){
-                res.render('profile',{apikey:found.uuid});
+                res.render('profile',{apikey:found.uuid,rate:found.count});
             }
             else if(result==false){
                 res.send("password incorrect");
